@@ -1,6 +1,7 @@
 import React from "react";
 import Greeting from "./Greeting";
 import DestructuringProps from "./DestructuringProps";
+import ConditionalRendering from "./Component/ConditionalRendering";
 
 export default function App() {
   const name = "harish";
@@ -17,6 +18,7 @@ export default function App() {
 
   return (
     <div>
+      <ConditionalRendering/>
       <h1>React.js class</h1>
       <h2>My name is {name}</h2>
       <Greeting name={name} age={age} />

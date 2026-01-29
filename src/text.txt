@@ -40,3 +40,17 @@
         Decleration of props
         destructuring of props
 
+29/01/2026
+
+## Conditional rendering
+
+    Conditional rendering means showing or hiding parts
+    of UI based on some conditions (state,props..)
+
+        Ternary Operator   (condition)?true:false
+        Logical operator   &,|,!
+
+
+## List rendering 
+
+    Rendering multiple items dynamically using .map()..
