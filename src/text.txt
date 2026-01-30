@@ -50,7 +50,23 @@
         Ternary Operator   (condition)?true:false
         Logical operator   &,|,!
 
+30/01/2026
 
 ## List rendering 
 
     Rendering multiple items dynamically using .map()..
+
+## useState()
+
+        Usestate is a React Hook taht allows you to add state (data that can change over time) 
+        to a functional component.
+
+        Normally , in javascript function, variables after disapper after the function runs.
+        But with Usestate , react remeber value b/w re-render.
+
+        syntex:
+            const [state,setState]=Usestate(initiateValue)
+
+        state---the current value of the state variables
+        setState--- a function that updates the state
+        initiateValue-- the starting value of the state.

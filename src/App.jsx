@@ -2,6 +2,8 @@ import React from "react";
 import Greeting from "./Greeting";
 import DestructuringProps from "./DestructuringProps";
 import ConditionalRendering from "./Component/ConditionalRendering";
+import ListRender from "./Component/ListRender";
+import UseStateHook from "./Component/UseStateHook";
 
 export default function App() {
   const name = "harish";
@@ -12,13 +14,15 @@ export default function App() {
 
   const address2 = "madurai";
   const number2 = "64826265954";
-  
+
   const address3 = "chennai";
   const number3 = "54548994999";
 
   return (
     <div>
-      <ConditionalRendering/>
+      <UseStateHook />
+      <ListRender />
+      <ConditionalRendering />
       <h1>React.js class</h1>
       <h2>My name is {name}</h2>
       <Greeting name={name} age={age} />
