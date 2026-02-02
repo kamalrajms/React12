@@ -4,6 +4,9 @@ import DestructuringProps from "./DestructuringProps";
 import ConditionalRendering from "./Component/ConditionalRendering";
 import ListRender from "./Component/ListRender";
 import UseStateHook from "./Component/UseStateHook";
+import UserUseState from "./Component/UserUseState";
+import Darkmode from "./Component/Darkmode";
+import FieldInput from "./Component/FieldInput";
 
 export default function App() {
   const name = "harish";
@@ -18,11 +21,16 @@ export default function App() {
   const address3 = "chennai";
   const number3 = "54548994999";
 
+  const display = true;
+
   return (
     <div>
+      <FieldInput />
+      <Darkmode />
+      <UserUseState />
       <UseStateHook />
-      <ListRender />
-      <ConditionalRendering />
+      {display ? <ListRender /> : <ConditionalRendering />}
+
       <h1>React.js class</h1>
       <h2>My name is {name}</h2>
       <Greeting name={name} age={age} />
