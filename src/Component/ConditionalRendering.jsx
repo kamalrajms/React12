@@ -1,9 +1,10 @@
 import React from "react";
+import "./ConditionalRendering.css";
 
 export default function ConditionalRendering() {
   const user = false;
   return (
-    <div>
+    <div className="conditionalrendering">
       {/* Conditional rendering */}
       <h3>Conditional rendering...</h3>
       {user ? <p>Welcome Balck to react.js</p> : <p>Please Login..</p>}

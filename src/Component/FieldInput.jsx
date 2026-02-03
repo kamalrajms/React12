@@ -5,8 +5,14 @@ export default function FieldInput() {
   const [checkbox, setCheckBox] = useState(false);
   console.log(name);
 
+  const theme = {
+    backgroundColor: "red",
+    color: "#fff",
+    padding: "50px",
+  };
+
   return (
-    <div>
+    <div style={theme}>
       <label htmlFor="">name</label>
       <input
         type="text"

@@ -58,7 +58,7 @@
 
 02/02/2026
 
-## useState()
+## useState() And Form & controlled input
 
         Usestate is a React Hook taht allows you to add state (data that can change over time) 
         to a functional component.
@@ -72,3 +72,12 @@
         state---the current value of the state variables
         setState--- a function that updates the state
         initiateValue-- the starting value of the state.
+
+## Styleing in react
+
+    Global way Styleing----index.css,app.css
+    Exteral way Styleing---- seperate Styleing file for a component
+    module way Styleing --- while we are useing this way of Styleing mean  
+                            ,we need to add file name as [filename.module.css] 
+    inline Styleing--- style={{property:"value"}}
+    Object way Styleing---

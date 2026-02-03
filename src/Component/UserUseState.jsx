@@ -5,7 +5,7 @@ export default function UserUseState() {
   console.log(user);
 
   return (
-    <div>
+    <div className="userstate">
       {user ? <h2>Welcome back...!</h2> : <h2>Please Login..</h2>}
       {user && (
         <p>

@@ -7,6 +7,8 @@ import UseStateHook from "./Component/UseStateHook";
 import UserUseState from "./Component/UserUseState";
 import Darkmode from "./Component/Darkmode";
 import FieldInput from "./Component/FieldInput";
+import RegisterForm from "./Component/RegisterForm";
+import ConditionalForm from "./Component/ConditionalForm";
 
 export default function App() {
   const name = "harish";
@@ -25,12 +27,14 @@ export default function App() {
 
   return (
     <div>
+      <ConditionalForm />
+      <RegisterForm />
       <FieldInput />
       <Darkmode />
       <UserUseState />
       <UseStateHook />
-      {display ? <ListRender /> : <ConditionalRendering />}
-
+      <ListRender />
+      <ConditionalRendering />
       <h1>React.js class</h1>
       <h2>My name is {name}</h2>
       <Greeting name={name} age={age} />
