@@ -81,3 +81,27 @@
                             ,we need to add file name as [filename.module.css] 
     inline Styleing--- style={{property:"value"}}
     Object way Styleing---
+
+05/02/2026
+
+## useEffect()
+
+    in react ,useEffect is a hook that lets you Perform side effect in functionl components.
+    Side Effect are task  that happen outside the normal React rendering process,Like:
+
+            Fetching data from API
+            Updating  the brouser DOM manually
+            Starting / stopping the timers.
+
+        
+        syntex:
+
+            useEffect(()=>{
+                //code...
+            },[dependency 1,dependency 2,...])
+
+
+            if we doesn't mension any dependency 
+            means it will execute only once.
+
+    
