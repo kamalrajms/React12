@@ -102,6 +102,33 @@
 
 
             if we doesn't mension any dependency 
-            means it will execute only once.
+            means it will execute only once at the begining.
+
+06/002/2026
+
+## UseRef()
+
+    UseRef is a React Hook taht gives you a box(.current) you can store anythoing in- num,
+    String,object,function,even DOM elements.
+
+    That value Persists between renders.
+
+    Updating it does not cause your component to re-render.
+
+    {current:value}
+
+
+
+## domain
+
+    .com---commerical
+    .org---Organization
+    .net---network
+    .edu---education
+    .gov---Governmanet
+    .mil---Military
+    .co---Company
+    .biz---Business
+    .in---india
 
     

@@ -14,3 +14,18 @@
 .Register {
   margin: 500px;
 }
+
+/* uerRef */
+.image-container {
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  cursor: pointer;
+  background: aqua;
+}
+.image {
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  cursor: pointer;
+}
