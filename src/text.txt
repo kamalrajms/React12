@@ -131,4 +131,17 @@
     .biz---Business
     .in---india
 
+09/02/2026
+
+## useContext
+
+    Passing the data from a parent component down to deeply nested  child component is annoying.
+    Normally,you'd have to pass props manually through each level (called Props Drilling).
+    useContext lets ypu skip all the middle component  and share data directly.
+
+        Create a Context
+        Provides a value
+        Consume the value
+
+
     

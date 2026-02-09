@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useContext, createContext } from "react";
 import Greeting from "./Greeting";
 import DestructuringProps from "./DestructuringProps";
 import ConditionalRendering from "./Component/ConditionalRendering";
@@ -14,6 +14,10 @@ import UseeffectTimer from "./Component/UseeffectTimer";
 import StopWatch from "./Component/StopWatch";
 import UseEffectAIP from "./Component/UseEffectAIP";
 import UseRefHook from "./Component/UseRefHook";
+import First from "./Context/First";
+import ContextForm from "./Context/ContextForm";
+
+export const Pass = createContext();
 
 export default function App() {
   const name = "harish";
@@ -30,8 +34,23 @@ export default function App() {
 
   const display = true;
 
+  const [mode, setMode] = useState("light");
+  const data = { name: "Reddy" };
+  console.log(mode);
+
   return (
     <div>
+      <div style={{ border: "2px solid black" }}>
+        <Pass.Provider value={{ mode, setMode, data }}>
+          <ContextForm />
+        </Pass.Provider>
+      </div>
+      <div style={{ border: "2px solid black", padding: "20px" }}>
+        <h2>App component</h2>
+        <Pass.Provider value={name}>
+          <First />
+        </Pass.Provider>
+      </div>
       <UseRefHook />
       <UseEffectAIP />
       <StopWatch />
