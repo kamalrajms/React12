@@ -16,6 +16,9 @@ import UseEffectAIP from "./Component/UseEffectAIP";
 import UseRefHook from "./Component/UseRefHook";
 import First from "./Context/First";
 import ContextForm from "./Context/ContextForm";
+import UseReducerHook from "./Context/UseReducerHook";
+import UseReducerForm from "./Context/UseReducerForm";
+import UseCallBackHook from "./Component/UseCallBackHook";
 
 export const Pass = createContext();
 
@@ -40,6 +43,9 @@ export default function App() {
 
   return (
     <div>
+      <UseCallBackHook/>
+      <UseReducerForm />
+      <UseReducerHook />
       <div style={{ border: "2px solid black" }}>
         <Pass.Provider value={{ mode, setMode, data }}>
           <ContextForm />

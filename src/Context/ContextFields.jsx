@@ -7,7 +7,7 @@ export default function ContextFields() {
   return (
     <div>
       <label htmlFor="">Name</label>
-      <input type="text" value={data.name}/>
+      <input type="text" />
       <Contextbtn />
     </div>
   );
