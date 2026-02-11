@@ -14,3 +14,14 @@ export default function ListCallback({ getItems }) {
     </div>
   );
 }
+
+
+    // const handleClick = () => {
+    // console.log("Clicked");
+    // };
+
+    // Every time the component re-renders, this function is recreated.
+
+    // If we pass this function to a child component, the child will also re-render — even if nothing changed.
+
+    // useCallback solves this problem.

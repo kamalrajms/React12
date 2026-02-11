@@ -170,3 +170,56 @@
     const name=useCallback(()=>{
         // code...
     },[dependency 1,dependency 2,...])
+
+
+
+    const handleClick = () => {
+    console.log("Clicked");
+    };
+
+    Every time the component re-renders, this function is recreated.
+
+    If we pass this function to a child component, the child will also re-render — even if nothing changed.
+
+    useCallback solves this problem.
+
+
+
+11/02/2026
+
+## Routing in react and nested routing 
+
+    Routing means navigating between  different pages in web app without refreshing the browser.
+    In traditional websites ,clicking a link reloads the whole page.
+    In react (A Single page application) , Routing lets us changes the view without reloading.
+
+        better performance (no full reload)
+        Smooth user experiance
+        Control over navigation without sever request
+
+    Commend: npm install react-router-dom
+
+    basic structure:
+
+        <BrowserRouter>
+        <Routes>
+        <Route path:"addtess path of a component" element={<Home/>}/>
+        <Route path:"addtess path of a component" element={<About/>}/>
+        <Route path:"addtess path of a component" element={<service/>}/>
+        </Routes>
+        </BrowserRouter>
+
+
+        BrowserRouter
+
+            it is the main weapper component for routing in react App.
+            It enables navigation using  the browser URL (history API).
+            without this, routing will not work.
+
+        Routes
+            It contains all the  <Route/> component
+            It tell  react Router to which component to shown for which path.
+            Only one route will match and render at a time..
+
+        Route
+            Defines a specific URL Path and  which component should for that path.
