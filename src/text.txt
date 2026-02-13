@@ -223,3 +223,24 @@
 
         Route
             Defines a specific URL Path and  which component should for that path.
+
+
+13/02/2026
+
+
+## Useparam() -- routing dom
+
+        useParams() is a React Router hook that lets you read dynamic values from the URL path (not from the query string).
+
+		It’s commonly used when you have routes with dynamic segments like /users/:id or /products/:productId.
+
+## useNavigate()-- routing dom
+
+        useNavigate is also from react routing dom , it is used for navigation between components
+        as functionaly.
+
+## useId () 
+
+    UseId is  react Hook that create a unique and stable ID for each component instance.
+
+    when you bulid component like form or list ,you oftern need unique id..

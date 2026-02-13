@@ -24,7 +24,7 @@ export default function UseCallBackHook() {
         value={number}
         onChange={(e) => setNumber(parseInt(e.target.value))}
       />
-      <button onClick={() => setDark(!dark)}>Toggle them</button>
+      <button onClick={() => setDark(!dark)}>Toggle them</button>e
       <ListCallback getItems={getItems} />
     </div>
   );
