@@ -276,3 +276,25 @@
     }
 
     console.log(response.data)
+
+
+18/02/2026
+
+## CRED operation
+
+    create Data---Post
+    Read data----Get
+    Update data---Put
+    Delete data---Delete
+
+
+        Applications
+
+    Client  (React application)    ----         Server
+
+        list data
+        1               ---------------->       
+        2                   https request
+        3               <-----------------
+                            https response
+                                {json}
